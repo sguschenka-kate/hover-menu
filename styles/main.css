@@ -1,0 +1,79 @@
+body {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 54px;
+}
+
+.nav__item {
+  margin: 0;
+  height: 47px;
+  width: 54px;
+  overflow: hidden;
+
+  transition: width 0.2s ease-in-out 0.2s;
+  transition: height 0.2s ease-in-out 0.1s;
+}
+
+.nav__item:hover {
+  width: 204px;
+  height: 195px;
+}
+
+.nav__link {
+  text-decoration: none;
+  display: block;
+  width: 150px;
+  color: #fff;
+  background: #bbb;
+  line-height: 1;
+  padding: 10px 0 10px 15px;
+  margin: 1px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav__link:first-child {
+  font-size: 20px;
+  height: 25px;
+  line-height: 28px;
+  position: relative;
+  text-indent: 38px;
+}
+
+.nav__link:hover {
+  transition: all 0.1s ease-in-out;
+  background: #2fc5ff;
+}
+
+.nav__link:first-child::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-size: cover;
+  position: absolute;
+  top: 7px;
+  left: 12px;
+}
+
+.nav__link--main::before {
+  background: url(../img/home-white-18dp.svg) center center no-repeat;
+}
+
+.nav__link--products::before {
+  background: url(../img/android-white-18dp.svg) center center no-repeat;
+}
+
+.nav__link--links::before {
+  background: url(../img/pets-white-18dp.svg) center center no-repeat;
+}
+
+.nav__link--settings::before {
+  background: url(../img/settings-white-18dp.svg) center center no-repeat;
+}
